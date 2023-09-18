@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+    <style>
+        body {
+    font-size: 16px;
+    line-height: 1.5;
+    height: 10000px;
+
+}
+
+
+         .caracteristicaspequeñas{
+            position: absolute;
+            left: 400px; /* Ajusta la posición horizontal */
+            top: 700px; /* Ajusta la posición vertical */
+            font-family:helvetica ;
+            color: #191919;
+            
+            
+            
+        }
+        .adi {
+            position: absolute;
+            left: 800px; /* Ajusta la posición horizontal */
+            top: 1050px; /* Ajusta la posición vertical */
+            font-family:helvetica;
+            color: #575757;
+        }
+
+        /* Estilo para el subtítulo */
+        .subtitulo {
+            font-size: 22px; /* Tamaño de fuente del subtítulo */
+        }
+        .subtitulo4 {
+            font-size: 10px; 
+            text-align: justify;
+        }
+        
+
+        .codigo {
+            position: absolute;
+            left: 880px; /* Ajusta la posición horizontal */
+            top: 400px; /* Ajusta la posición vertical */
+            font-family:helvetica ;
+            color: #191919;
+            
+            
+        }
+        .subtitulo3 {
+            font-size: 12px; 
+        }
+        
+        
+
+        .contenedor {
+           
+            position: absolute;
+            top: 600px; 
+            left: 880px; 
+            font-family:verdana;
+        }
+        .subtitulo1 {
+            font-size: 14px; 
+        }
+        
+        .imagen-container {
+            border: 0px solid #001; /* Grosor y color del borde */
+            padding: 10px; /* Espacio interno alrededor de la imagen */
+            display: inline-block; /* Para que el contenedor se ajuste al contenido */
+            position: absolute;
+            top: 300px; 
+            left: 410px; 
+        }
+        .imagen-container img {
+            display: block;
+        }
+        .subtitulo-container {
+            position: absolute;
+            left: 880px; /* Ajusta la posición horizontal */
+            top: 270px; /* Ajusta la posición vertical */
+            font-family:helvetica;
+            color: #575757;
+        }
+
+        /* Estilo para el subtítulo */
+        .subtitulo {
+            font-size: 22px; /* Tamaño de fuente del subtítulo */
+        }
+
+        
+
+        /* Estilo para la imagen dentro del contenedor */
+        .imagen-container img {
+            display: block;
+        }
+        body {
+            background-image: url(fondo2.jpg); 
+            background-size: cover;
+            background-repeat: repeat; 
+            height: 50px;
+        }
+        body {
+            margin: 1; /* Elimina el margen predeterminado del cuerpo de la página */
+            padding: 1; /* Elimina el relleno predeterminado del cuerpo de la página */
+            position: relative; /* Permite que la posición absoluta sea relativa al cuerpo */
+        }
+
+        /* Estilo para la imagen */
+        .imagen-central {
+            
+ position: absolute; /* Posición absoluta en relación al cuerpo */
+            top: 1100px; 
+            left: 100px;
+        }
+
+        body {
+            margin: 1; /* Elimina el margen predeterminado del cuerpo de la página */
+            padding: 1; /* Elimina el relleno predeterminado del cuerpo de la página */
+            position: relative; /* Permite que la posición absoluta sea relativa al cuerpo */
+        }
+
+        /* Estilo para la imagen */
+        .imagen-esquina {
+            position: relative; /* Posición absoluta en relación al cuerpo */
+            top: 20px; /* Ajusta el valor para mover la imagen hacia abajo */
+            left: 80px; /
+
+        }
+         
+
+        .buscador-container {
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 450px;
+        }
+
+        /* Estilo para el campo de búsqueda */
+        #buscador {
+            width: 470px; /* Ancho del campo de búsqueda */
+            height: 30px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Estilo para el botón de búsqueda */
+        #boton-buscar {
+            background-color: #0074D9;
+            color: white;
+            height: 50px;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .swiper-container {
+            position: absolute;
+            margin-top: 1100px;
+            margin-left: 400px;
+            width: 1000px; height: 310px;
+        }
+         
+        /* Estilo para el menú principal */
+        ul.menu {
+            list-style: none;
+            padding: 0;
+            font-family:verdana;
+          
+        }
+
+        ul.menu li {
+            display: inline-block;
+            position: relative;
+            margin-right: 20px;
+            top: 220px; 
+            left: 400px;
+        }
+
+        /* Estilo para los submenús */
+        ul.submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 10px;
+            
+        }
+
+        ul.menu li:hover ul.submenu {
+            display: block;
+            
+        }
+         .img1 {
+            position: absolute;
+            left: 100px; /* Ajusta la posición horizontal */
+            top: 200px; /* Ajusta la posición vertical */
+        }
+        .img2 {
+            position: absolute;
+            left: 110px; /* Ajusta la posición horizontal */
+            top: 256px; /* Ajusta la posición vertical */
+        }
+        .img3 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 330px; /* Ajusta la posición vertical */
+        }
+        .img4 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 380px; /* Ajusta la posición vertical */
+        }
+        .img5 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 440px; /* Ajusta la posición vertical */
+        }
+        .img6 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 500px; /* Ajusta la posición vertical */
+        }
+        .img7 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 560px; /* Ajusta la posición vertical */
+        }
+        .img8 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 620px; /* Ajusta la posición vertical */
+        }
+        .img9 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 680px; /* Ajusta la posición vertical */
+        }
+        .img10 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 740px; /* Ajusta la posición vertical */
+        }
+        .img11 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 800px; /* Ajusta la posición vertical */
+        }
+        .img12 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 860px; /* Ajusta la posición vertical */
+        }
+        .img13 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 920px; /* Ajusta la posición vertical */
+        }
+        .img14 {
+            position: absolute;
+            left: 130px; /* Ajusta la posición horizontal */
+            top: 980px; /* Ajusta la posición vertical */
+        }
+        .what {
+            position: absolute;
+            left: 880px; /* Ajusta la posición horizontal */
+            top: 460px; /* Ajusta la posición vertical */
+        }
+        .contacto {
+            position: absolute;
+            left: 1000px; /* Ajusta la posición horizontal */
+            top: 460px; /* Ajusta la posición vertical */
+        }
+        
+
+
+
+           
+    
+    
+    </style>
+</head>
+<body>
+     
+    <div class="contenedor">
+        <h2 class="subtitulo1">
+<br><br><br>
+  CARACTERISTICAS:<br><br>
+- Banda WiFi 5 de 5 GHz.<br>
+
+- Velocidad total de 1.7 Gbps throughput rate.<br>
+
+- Alimentación a través de Ethernet (PoE).<br>
+
+- Banda WiFi 4 de 2,4 GHz.<br>
+
+- Antenas internas.<br>
+
+- Tecnología MU-MIMO.<br>
+
+- Diseño compacto y elegante</h2>
+    </div>
+     <div class="imagen-container">
+        <a href="URL_del_destino">
+            <img src="router3grande.jpg" alt="Descripción de la imagen">
+        </a>
+    </div>
+     <div class="subtitulo-container">
+        <h2 class="subtitulo">UAP-NanoHD Access Point WiFi AC<br>
+         doble banda, MIMO (2.4/5 GHz), velocidad 1.7 Gbps<br> soporta 802.3af PoE, incluye kit de montaje<br> No incluye PoE..</h2>
+    </div>
+    <div class="adi">
+        <h2 class="subtitulo">Productos Relacionados: </h2>
+    </div>
+    <div class="codigo">
+
+        <p class="subtitulo3">SKU: 364215376135191</p>
+    </div>
+    <div class="caracteristicaspequeñas">
+
+        <p class="subtitulo4">El UAP-nanoHD es un punto de acceso de techo que ofrece una conectividad inalámbrica de alta<br> 
+                              velocidad y estabilidad en un diseño compacto y elegante. Cuenta con una banda WiFi 5 de 5 GHz<br> 
+                              para velocidades más rápidas y una banda WiFi 4 de 2,4 GHz para la compatibilidad con dispositivos<br> 
+                              más antiguos. Además, su tecnología MU-MIMO y antenas internas permiten la conexión de varios<br>
+                              dispositivos simultáneamente sin perder calidad de conexión. También cuenta con alimentación a<br>
+                              través de Ethernet (PoE), lo que significa que puede ser alimentado mediante el cable Ethernet, lo<br> 
+                              que facilita su instalación en lugares donde no hay una toma de corriente cercana.
+<br><br>
+                              El UAP-nanoHD cuenta con un diseño compacto y elegante que lo hace ideal para su instalación en<br> 
+                              espacios donde se requiere una solución de conectividad inalámbrica de alta calidad pero que también<br>
+                              cumple con los requisitos estéticos del lugar. Además, su instalación en el techo ayuda a mejorar la<br> 
+                              cobertura de la señal inalámbrica en áreas grandes o de difícil acceso.
+<br><br>
+                              En resumen, el UAP-nanoHD es un punto de acceso de techo con características técnicas que incluyen<br> 
+                              banda WiFi 5 de 5 GHz y banda WiFi 4 de 2,4 GHz, antenas internas, tecnología MU-MIMO,<br>
+                              alimentación a través de Ethernet (PoE) y diseño compacto y elegante. Es ideal para hogares,<br>
+                              oficinas, escuelas, hoteles, restaurantes y cualquier lugar donde se requiera una conectividad<br>
+                              inalámbrica de alta calidad y estabilidad en un diseño compacto y estético.</p>
+    </div>
+    <div class="img1">
+        <a href="URL_del_destino">
+            <img src="airlive.gif" >
+        </a>
+    </div>
+    <div class="img2">
+        <a href="URL_del_destino">
+            <img src="alfa.gif" >
+        </a>
+    </div>
+    <div class="img3">
+        <a href="URL_del_destino">
+            <img src="amp.jpg" >
+        </a>
+    </div>
+    <div class="img4">
+        <a href="URL_del_destino">
+            <img src="amphenol.jpg" >
+        </a>
+    </div>
+    <div class="img5">
+        <a href="URL_del_destino">
+            <img src="Belden.jpg" >
+        </a>
+    </div>
+    <div class="img6">
+        <a href="URL_del_destino">
+            <img src="dixon.jpg" >
+        </a>
+    </div>
+    <div class="img7">
+        <a href="URL_del_destino">
+            <img src="amphenol.jpg" >
+        </a>
+    </div>
+    <div class="img8">
+        <a href="URL_del_destino">
+            <img src="dlink.jpg" >
+        </a>
+    </div>
+    <div class="img9">
+        <a href="URL_del_destino">
+            <img src="edimax.jpg" >
+        </a>
+    </div>
+    <div class="img10">
+        <a href="URL_del_destino">
+            <img src="engenius.jpg" >
+        </a>
+    </div>
+    <div class="img11">
+        <a href="URL_del_destino">
+            <img src="lcom.jpg" >
+        </a>
+    </div>
+    <div class="img12">
+        <a href="URL_del_destino">
+            <img src="lenovo.jpg" >
+        </a>
+    </div>
+    <div class="img13">
+        <a href="URL_del_destino">
+            <img src="tplink.jpg" >
+        </a>
+    </div>
+    <div class="img14">
+        <a href="URL_del_destino">
+            <img src="trendnet.jpg" >
+        </a>
+    </div>
+    <div class="what">
+        <a href="URL_del_destino">
+            <img src="what.gif" >
+        </a>
+    </div>
+    <div class="contacto">
+        <a href="URL_del_destino">
+            <img src="contacto.gif" >
+        </a>
+    </div>
+
+
+   <ul class="menu">
+        <li><a href="/">Inicio  ></a></li>
+        <li>
+            <a href="#">Productos  ></a>
+            
+        </li>
+        <li>
+            <a href="#">Servicios  ></a>
+            
+        </li>
+        <li><a href="/contacto">Puerto de Acceso UAP-NanoHD</a></li>
+    </ul>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="router1.jpg" alt="Imagen 1"></div>
+        <div class="swiper-slide"><img src="router2.jpg" alt="Imagen 2"></div>
+        <div class="swiper-slide"><img src="router3.jpg" alt="Imagen 3"></div>
+        <!-- Agrega más imágenes aquí -->
+    </div>
+    <!-- Agrega controles de navegación y paginación si lo deseas -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<div class="buscador-container">
+        <input type="text" id="buscador" placeholder="">
+        <button id="boton-buscar">Buscar</button>
+    </div>
+
+    <!-- Resultados de la búsqueda -->
+    <div id="resultados">
+        <!-- Los resultados se mostrarán aquí -->
+    </div>
+    <h1></h1>
+    <p></p>
+    <img class="imagen-esquina" src="izquierdo.jpg" alt="Imagen en la esquina superior izquierda">
+     <img class="imagen-central" src="ubiquiti.jpg" alt="Imagen en la esquina superior izquierda">
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        // Configuración opcional
+        slidesPerView: 2.5, // Cantidad de diapositivas visibles a la vez
+        spaceBetween: 20, // Espacio entre diapositivas
+        loop: true, // Repetir el carrusel
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>
